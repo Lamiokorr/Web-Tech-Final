@@ -1,10 +1,10 @@
-<h1>**Sip & Savor Coffee Shop Website**></h1>
+<h1>Sip & Savor Coffee Shop Website</h1>
 
 Welcome to the Sip & Savor Coffee Shop Website repository! This project is a web-based platform designed to streamline coffee shop operations and enhance the customer experience. The site provides an admin dashboard for managing users, products, and orders, as well as a user-friendly interface for customers to explore and order from our offerings.<br>
 
-**Features**
+<h3>Features</h3>
 
-_**Admin Panel**_
+<h4>Admin Panel</h4>
 
 User Management: Manage customer and staff accounts.
 
@@ -14,7 +14,7 @@ Order Management: View and update customer orders, including status updates.
 
 Dashboard Analytics: View key metrics such as total users, daily orders, and pending issues.
 
-_**Customer Interface**_
+<h3>Customer Interface</h3>
 
 Product Catalog: Browse the coffee shop’s menu and product details.
 
@@ -23,7 +23,7 @@ Ordering System: Place orders seamlessly.
 Feedback Submission: Provide feedback to the coffee shop.
 
 
-_**Installation**_
+<h3>Installation</h3>
 
 1. Clone the repository:
 
@@ -49,8 +49,8 @@ Admin Dashboard: http://localhost:8000/admin/admin_dashboard.php
 
 Customer Interface: http://localhost:8000/index.php
 
-**Technologies Used**_
-**Frontend**:
+<h3>Technologies Used</h3>
+<h4>Frontend</h4>
 
 - HTML5
 
@@ -58,7 +58,7 @@ Customer Interface: http://localhost:8000/index.php
 
 - JavaScript
 
-**Backend**:
+<h4>Backend</h4>
 
 - PHP
 
