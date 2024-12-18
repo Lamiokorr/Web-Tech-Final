@@ -1,0 +1,86 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+}
+
+.sidebar {
+    height: 100vh;
+    background-color: #7E9C92;
+    color: white;
+    padding: 1rem;
+    position: fixed; /* Keeps sidebar fixed on the left */
+    top: 0;
+    left: 0;
+    width: 250px; /* Sidebar default width */
+    transition: width 0.3s ease-in-out; /* Smooth transition for responsiveness */
+    z-index: 1000;
+}
+
+.sidebar a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 10px 15px;
+    border-radius: 4px;
+}
+
+.sidebar a:hover,
+.sidebar a.active {
+    background-color: #495057;
+}
+
+.content {
+    margin-left: 270px; /* Creates space so the content is not covered */
+    padding: 2rem;
+    transition: margin-left 0.3s ease-in-out;
+}
+
+/* Responsive Sidebar */
+@media (max-width: 992px) {
+    .sidebar {
+        width: 200px; /* Reduce sidebar width for smaller screens */
+    }
+
+    .content {
+        margin-left: 220px; /* Adjust content margin */
+    }
+}
+
+@media (max-width: 768px) {
+    .sidebar {
+        width: 100%; /* Full width for very small screens */
+        height: auto;
+        position: relative; /* Sidebar no longer fixed */
+    }
+
+    .content {
+        margin-left: 0; /* Remove margin for content */
+    }
+
+    .sidebar ul {
+        display: flex; /* Display links in a row */
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .sidebar a {
+        padding: 8px 10px;
+        text-align: center;
+    }
+}
+
+.card {
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.card .card-icon {
+    font-size: 2rem;
+    color: #B2704B;
+}
+
+.container-fluid {
+    display: flex;
+}
