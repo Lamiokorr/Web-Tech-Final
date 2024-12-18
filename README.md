@@ -25,30 +25,52 @@ Feedback Submission: Provide feedback to the coffee shop.
 
 _**Installation**_
 
-Clone the repository:
+1. Clone the repository:
 
 git clone https://github.com/your-username/coffee-shop-website.git
 
-Navigate to the project directory:
+2. Navigate to the project directory:
 
 cd coffee-shop-website
 
-Set up the database:
+3. Set up the database:
 
-Import the SQL file (database.sql) provided in the repository into your MySQL database.
+Import the SQL file provided in the repository into your MySQL database.
 
-Update the database connection details in functions/database.php.
+Update the database connection details in config/database.php.
 
-Start a local server (e.g., XAMPP, WAMP, or built-in PHP server):
+4. Start a local server (e.g., XAMPP, WAMP, or built-in PHP server):
 
 php -S localhost:8000
 
-Access the website in your browser:
+5. Access the website in your browser:
 
 Admin Dashboard: http://localhost:8000/admin/admin_dashboard.php
 
 Customer Interface: http://localhost:8000/index.php
 
-Technologies Used
+**Technologies Used**_
+**Frontend**:
+
+- HTML5
+
+- CSS3 (Bootstrap 5 for styling)
+
+- JavaScript
+
+**Backend**:
+
+- PHP
+
+- MySQL (for database management)
+
+**Future Improvements**
+
+Integration of payment gateways for online transactions.
+
+Advanced reporting and analytics for the admin dashboard.
+
+Enhanced customer account management.
+
 
 
