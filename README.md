@@ -72,5 +72,6 @@ Advanced reporting and analytics for the admin dashboard.
 
 Enhanced customer account management.
 
+Link to video demo : https://youtu.be/osqDR7syLoI 
 
 
