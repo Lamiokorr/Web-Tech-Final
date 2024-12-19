@@ -1,0 +1,98 @@
+body {
+    font-family: Lato, sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+}
+
+.main-layout{
+    display: flex;
+    min-height: 100vh;
+}
+
+.sidebar {
+    width: 250px;
+    background-color: #847171; 
+    color: white;
+    padding: 1rem;
+    position: relative; 
+    top: 0;
+    left: 0;
+    height: 100%; /* Sidebar width */
+    z-index: 1000;
+    overflow-y: auto; /* Add scrolling for overflow */
+}
+
+.sidebar a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 10px 15px;
+    border-radius: 4px;
+}
+
+.sidebar a:hover,
+.sidebar a.active {
+    background-color: #6c757d;
+}
+
+.dashboard-content {
+    flex: 1;
+    padding: 2rem;
+    min-height: 100vh; /* Ensure the content fills the viewport */
+    box-sizing: border-box;
+    background-color: #fff;
+    overflow:auto; /* Add scroll if content overflows */
+}
+
+/* Responsive adjustments */
+@media (max-width: 992px) {
+    .sidebar {
+        width: 200px; /* Smaller sidebar */
+    }
+
+    .dashboard-content {
+        padding: 1.5rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .sidebar {
+        width: 100%; /* Full width on small screens */
+        height: auto;
+        position: relative; /* Sidebar becomes non-fixed */
+        overflow: auto; /* Prevent content cutting */
+    }
+
+    .dashboard-content {
+        margin: 0; /* Content starts from left */
+        padding: 1rem; /* Add some padding */
+    }
+
+    /* .sidebar a {
+        padding: 10px;
+        text-align: center;
+    } */
+
+    .main-layout {
+        flex-direction: column; /* Stack sidebar and content */
+    }
+}
+
+.card {
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 1.5rem; /* Space between cards */
+    text-align: center;
+}
+
+.card h3 {
+    font-size: 2rem; /* Ensures consistent card text size */
+}
+
+/* .container-fluid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem; /* Space between rows and columns 
+    margin-top: 20px; /* Add some space at the top 
+} */
